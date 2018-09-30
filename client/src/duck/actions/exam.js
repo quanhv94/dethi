@@ -1,0 +1,10 @@
+import * as types from './../types'
+export const generateExam = (payload) => ({ type: types.GENERATE_EXAM, payload })
+export const generateExamSuccess = (payload) => ({ type: types.GENERATE_EXAM_SUCCESS, payload })
+export const generateExamFail = (errMessage) => ({ type: types.GENERATE_EXAM_FAIL, payload: errMessage })
+export const fetchExam = (payload) => ({ type: types.FETCH_EXAM, payload })
+export const fetchExamSuccess = (payload) => ({ type: types.FETCH_EXAM_SUCCESS, payload })
+export const fetchExamFail = (errMessage) => ({ type: types.FETCH_EXAM_FAIL, payload: errMessage })
+export const saveExam = (payload) => ({ type: types.SAVE_EXAM, payload })
+export const fetchExamList = () => ({ type: types.FETCH_EXAM_LIST })
+export const fetchExamListSuccess = (payload) => ({ type: types.FETCH_EXAM_LIST_SUCCESS, payload })
