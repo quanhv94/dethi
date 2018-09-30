@@ -187,3 +187,26 @@ footer {
     color: #fff;
   }
 }
+
+.date-picker {
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: silver;
+    opacity: 0.5;
+    z-index: 3600;
+  }
+  &__calendar {
+    position: fixed;
+    top: 25vh;
+    left: calc(50vw - 175px);
+    z-index: 3601;
+  }
+}
+.error-block {
+  margin-top: 5px;
+  color: red;
+}

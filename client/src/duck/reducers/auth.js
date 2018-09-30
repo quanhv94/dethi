@@ -13,4 +13,5 @@ export default createReducer(initialState, {
   [types.FETCH_CURRENT_USER_SUCCESS]: (state, action) => ({ ...state, user: action.payload, fetchingCurrentUser: false }),
   [types.FETCH_CURRENT_USER_FAIL]: (state, action) => ({ ...state, fetchingCurrentUser: false }),
   [types.LOGOUT_SUCCESS]: (state, action) => ({ ...state, user: null }),
+  [types.UPDATE_PROFILE_SUCCESS]: (state, action) => ({ ...state, user: action.payload }),
 })

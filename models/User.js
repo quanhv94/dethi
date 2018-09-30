@@ -9,6 +9,19 @@ var UserSchema = new Schema({
     type: String,
     trim: true
   },
+  birthdate: {
+    type: Date,
+    default: null
+  },
+  phoneNumber: {
+    type: String,
+    trim: true,
+    default: ''
+  },
+  gender: {
+    type: Number,
+    default: null
+  },
   facebookProvider: {
     type: {
       id: String,
