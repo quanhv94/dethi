@@ -4,6 +4,10 @@
 button.dropdown-item {
   cursor: pointer;
 }
+.form-control[readonly] {
+  background-color: transparent;
+  opacity: 1;
+}
 
 .kep-login-facebook.metro {
   display: inline-block;

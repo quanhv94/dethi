@@ -6,6 +6,7 @@ import Loading from './Layout/LoadingContainer'
 import Search from './Search/Search'
 import Exam from './Exam/ExamContainer'
 import ExamHistory from './ExamHistory/ExamHistoryContainer'
+import Profile from './Profile/ProfileContainer'
 import NotFound from './NotFound/NotFound'
 import { Switch, Route } from 'react-router-dom'
 
@@ -20,6 +21,7 @@ class App extends Component {
             <Route path='/search' component={Search} />
             <Route path='/exam' component={Exam} />
             <Route path='/exam-history' component={ExamHistory} />
+            <Route path='/profile' component={Profile} />
             <Route component={NotFound} />
           </Switch>
         </div>

@@ -20,6 +20,16 @@ route.get('/setup', setup)
 route.get('/me', authenticateMidleware, (req, res) => {
   res.send({ user: req.user })
 })
+route.post('/me', authenticateMidleware, (req, res) => {
+  const user = req.user
+  user.fullName = req.body.fullName
+  user.gender = req.body.gender
+  user.phoneNumber = req.body.phoneNumber
+  user.birthdate = req.body.birthdate
+  user.save((err, result) => {
+    res.send({ user: result })
+  })
+})
 
 async function setup(req, res) {
   // let subjectCount = await Subject.count()
